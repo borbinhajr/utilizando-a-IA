@@ -41,7 +41,7 @@ const perguntas = [
         alternativas:[
             {
             texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            afirmacao:"afrimação"
+            afirmacao:"afirmação"
             },
             {
             texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
@@ -56,7 +56,7 @@ const perguntas = [
         alternativas:[
             {
             texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            afirmacao:"afrimação"
+            afirmacao:"afirmação"
         },
         {
             texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
@@ -86,8 +86,14 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta(){
+    if(atual >= perguntas.length){
+        mostraResultado();
+        return;
+    }
+
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
     }
     
@@ -102,7 +108,7 @@ function mostraPergunta(){
 
      function respostaSelecionada(opcaoSelecionada){
         const afirmacoes = opcaoSelecionada. afirmacoes;
-        historiaFinal+= afirmacoes+"";
+        historiaFinal+= afirmacoes+" ";
         atual++;
         mostraPergunta();
      }
