@@ -6,14 +6,14 @@ const textoResultado=document.querySelector(".texto-resultado");
 
 const perguntas = [
 {
-    enunciado: "Não se sabe com precisão a data em que o futebol surgiu. Historiadores contam que os ingleses adquiriram o hábito de chutar uma bola de couro, símbolo da cabeça de um membro do exército da Dinamarca, como forma de comemorar a expulsão dos dinamarqueses de seu país ainda no século X. A ação era realizada anualmente, mas, com o tempo, a prática passou a popularizar-se, e os jogos com a bola passaram a ser realizados com maior frequência. Você acha este tipo de informação?",
+    enunciado: "Você prefere ",
     alternativas:[
         {
-        texto:"Muito interessante, pois nem todos sabem sobre como começou o hábito de chutar uma bola símbolo de uma cabeça",
+        texto:"le",
         afirmacao:"afirmação"
         },
         {
-       texto:"Desinteressante",
+       texto:"jogar futebol",
        afirmacao:"afirmação"
         }
 
@@ -22,7 +22,7 @@ const perguntas = [
 
 {
     
-        enunciado: "A primeira Copa do Mundo foi sediada e vencida pelo Uruguai em 1930. O torneio teve apenas 13 seleções participantes e todos os jogos ocorreram na capital, Montevidéu. Como você acha ",
+        enunciado: "",
         alternativas:[{
             texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
             afirmacao:"afirmação"
@@ -107,8 +107,8 @@ function mostraPergunta(){
      }
 
      function respostaSelecionada(opcaoSelecionada){
-        const afirmacoes = opcaoSelecionada. afirmacoes;
-        historiaFinal+= afirmacoes+" ";
+        const afirmacao = opcaoSelecionada. afirmacao;
+        historiaFinal+= afirmacao+" ";
         atual++;
         mostraPergunta();
      }
