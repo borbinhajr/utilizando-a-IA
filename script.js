@@ -6,15 +6,15 @@ const textoResultado=document.querySelector(".texto-resultado");
 
 const perguntas = [
 {
-    enunciado: "Você prefere ",
+    enunciado: "Você prefere jogar em qual área no futebol",
     alternativas:[
         {
-        texto:"le",
-        afirmacao:"afirmação"
+        texto:"Na parte defensiva ",
+        afirmacao:"Você seria um volante, zagueiro, até mesmo um lateral defensivo"
         },
         {
-       texto:"jogar futebol",
-       afirmacao:"afirmação"
+       texto:"Na parte ofensiva",
+       afirmacao:"Você seria um atacante, pontas ou até mesmo um meio campo ofensivo"
         }
 
     ]
@@ -22,14 +22,14 @@ const perguntas = [
 
 {
     
-        enunciado: "",
+        enunciado: "Qual é seu estilo de jogo favorito?",
         alternativas:[{
-            texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-            afirmacao:"afirmação"
+            texto:"Marcar e roubar a bola",
+            afirmacao:"você tem um perfil para ser um volante ou lateral com boa marcação"
         },
         {        
-           texto:"Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-           afirmacao:"afirmação"
+           texto:"Criar jogadas e passes",
+           afirmacao:"Você se encaixa como meia amador, dono da criatividade do time "
         }        
         ]
     },
@@ -37,45 +37,45 @@ const perguntas = [
 
     {
     
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Você prefere jogar perto do gol adversario ou do seu gol?",
         alternativas:[
             {
-            texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            afirmacao:"afirmação"
+            texto:"Perto do gol adversário",
+            afirmacao:"Você é um atacante nato, sempre buscando gol"
             },
             {
-            texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
-            afirmacao:"afirmação"
+            texto:"perto do seu gol",
+            afirmacao:"Você é um defensor confiável, importante para proteger o time"
             }
         ]
     },
     
     {
     
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "O que você mais valoriza em um jogo?",
         alternativas:[
             {
-            texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            afirmacao:"afirmação"
+            texto:"A defesa solida ",
+            afirmacao:"Você seria um zagueiro central, sempre atento aos ataques adverários"
         },
         {
-            texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-            afirmacao:"afirmação"
+            texto:"O ataque rapido",
+            afirmacao:"Você poderia ser um atacante veloz ou um ponta, sempre em busca de gol"
         }
         ]
     },
 
     {
     
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Que tipo de jogador você se considera?",
         alternativas:[
             {
-            texto:"Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            afirmacao:"afirmação"
+            texto:"Um lider em campo",
+            afirmacao:"Você seria um meia, criando jogadas em situações complicadas e jogando tranquilo"
             },
         {
-            texto:"O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-            afirmacao:"afirmação"
+            texto:"Um finalizador",
+            afirmacao:"Você é um atacante, sempre pronto para marcar gols decisivos"
         }
         ]
     },
@@ -115,7 +115,7 @@ function mostraPergunta(){
 
 
      function mostraResultado(){
-        caixaPerguntas.textContent = "Em 2049...";
+        caixaPerguntas.textContent = "";
         textoResultado. textContent = historiaFinal;
         caixaAlternativas.textContent = "";
      }
