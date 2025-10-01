@@ -10,11 +10,11 @@ const perguntas = [
     alternativas:[
         {
         texto:"Na parte defensiva ",
-        afirmacao:"Você seria um volante, zagueiro, até mesmo um lateral defensivo"
+        afirmacao:"Você seria um volante, zagueiro, até mesmo um lateral defensivo."
         },
         {
        texto:"Na parte ofensiva",
-       afirmacao:"Você seria um atacante, pontas ou até mesmo um meio campo ofensivo"
+       afirmacao:"Você seria um atacante, pontas ou até mesmo um meio campo ofensivo."
         }
 
     ]
@@ -25,11 +25,11 @@ const perguntas = [
         enunciado: "Qual é seu estilo de jogo favorito?",
         alternativas:[{
             texto:"Marcar e roubar a bola",
-            afirmacao:"você tem um perfil para ser um volante ou lateral com boa marcação"
+            afirmacao:"você tem um perfil para ser um volante ou lateral com boa marcação."
         },
         {        
            texto:"Criar jogadas e passes",
-           afirmacao:"Você se encaixa como meia amador, dono da criatividade do time "
+           afirmacao:"Você se encaixa como meia amador, dono da criatividade do time. "
         }        
         ]
     },
@@ -41,11 +41,11 @@ const perguntas = [
         alternativas:[
             {
             texto:"Perto do gol adversário",
-            afirmacao:"Você é um atacante nato, sempre buscando gol"
+            afirmacao:"Você é um atacante nato, sempre buscando gol."
             },
             {
-            texto:"perto do seu gol",
-            afirmacao:"Você é um defensor confiável, importante para proteger o time"
+            texto:"perto do meu gol",
+            afirmacao:"Você é um defensor confiável, importante para proteger o time."
             }
         ]
     },
@@ -56,11 +56,11 @@ const perguntas = [
         alternativas:[
             {
             texto:"A defesa solida ",
-            afirmacao:"Você seria um zagueiro central, sempre atento aos ataques adverários"
+            afirmacao:"Você seria um zagueiro central, sempre atento aos ataques adverários."
         },
         {
             texto:"O ataque rapido",
-            afirmacao:"Você poderia ser um atacante veloz ou um ponta, sempre em busca de gol"
+            afirmacao:"Você poderia ser um atacante veloz ou um ponta, sempre em busca de gol."
         }
         ]
     },
@@ -71,11 +71,11 @@ const perguntas = [
         alternativas:[
             {
             texto:"Um lider em campo",
-            afirmacao:"Você seria um meia, criando jogadas em situações complicadas e jogando tranquilo"
+            afirmacao:"Você seria um meia, criando jogadas em situações complicadas e jogando tranquilo."
             },
         {
             texto:"Um finalizador",
-            afirmacao:"Você é um atacante, sempre pronto para marcar gols decisivos"
+            afirmacao:"Você é um atacante, sempre pronto para marcar gols decisivos."
         }
         ]
     },
